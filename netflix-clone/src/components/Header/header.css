@@ -1,0 +1,108 @@
+/*
+===================================
+1. Outer Container Styling
+===================================
+*/
+
+.header_outer_container {
+    /* Existing Styles */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Cleaned up Background/Color */
+   background-color: rgba(20, 20, 20, 0.9); 
+    
+    /* Important for visibility */
+    color: white; 
+    z-index: 999;
+    /* Optional: Add a subtle border or box shadow for definition */
+    border-bottom: 0;
+}
+
+/*
+===================================
+2. Inner Container & Layout
+===================================
+*/
+
+.header_container {
+    width: 90%; /* Standardize the width of the content */
+    max-width: 1920px; /* Optional: cap max width on very large screens */
+    display: flex;
+    justify-content: space-between; /* Pushes left and right sections to opposite ends */
+    align-items: center;
+    padding: 0 4%; /* Add horizontal padding inside the container */
+}
+
+/*
+===================================
+3. Left Section (Logo and Nav Links)
+===================================
+*/
+
+.header_left ul {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.header_left li {
+    margin-right: 20px;
+    font-size: 0.9vw;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header_left li:hover {
+    color: #b3b3b3; /* Lighter color on hover */
+}
+
+/* Target the first list item which contains the logo */
+.header_left ul li:first-child {
+    margin-right: 40px; /* More space after the logo */
+}
+
+.header_left img {
+    height: 35px; /* Adjust logo size */
+    width: auto;
+}
+
+/*
+===================================
+4. Right Section (Icons)
+===================================
+*/
+
+.header_right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_right li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Style for the MUI Icons */
+.header_right .MuiSvgIcon-root {
+    font-size: 1.5rem; /* Standard icon size */
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.header_right .MuiSvgIcon-root:hover {
+    color: #b3b3b3;
+}
+
+/* Style for the user icon (assuming AccountBoxIcon) */
+.header_right .MuiSvgIcon-root:nth-child(3) {
+    font-size: 2rem; /* Make the user icon slightly larger */
+}

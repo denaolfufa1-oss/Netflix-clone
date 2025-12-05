@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* All other CSS rules follow below */
+:root{
+  --font-base: 'Lexend',sans-serif;
+  --font-second-base:'Inter',sans-serif;
+  --color-primary: #ffffff;
+  --color-secondary: #e50914;
+  --color-text: #ffffff;
+  --color-background: #1111;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-base);
+}
+body{
+    background-color: #1111;
+    
+}
